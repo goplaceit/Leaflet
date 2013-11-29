@@ -100,15 +100,21 @@ L.Map.include({
 		            L.DomUtil.create('div', l + 'control-container', this._container);
 
 		function createCorner(vSide, hSide) {
-			var className = l + vSide + ' ' + l + hSide;
+			var className = l + vSide + ' ' + l + hSide + ' ' + l + hSide + '-' + vSide;
 
 			corners[vSide + hSide] = L.DomUtil.create('div', className, container);
 		}
 
 		createCorner('top', 'left');
 		createCorner('top', 'right');
+		createCorner('top', 'center');
 		createCorner('bottom', 'left');
 		createCorner('bottom', 'right');
+		createCorner('bottom', 'center');
+		createCorner('right', 'top');
+		createCorner('right', 'bottom');
+		createCorner('left', 'top');
+		createCorner('left', 'bottom');
 	},
 
 	_clearControlPos: function () {

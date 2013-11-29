@@ -101,6 +101,25 @@
 .leaflet-left {
 	left: 0;
 	}
+.leaflet-top-left, .leaflet-top-right {
+	top: 42px;
+	}
+.leaflet-bottom-left, .leaflet-bottom-right {
+	bottom: 42px;
+	}
+.leaflet-left-top .leaflet-control, .leaflet-right-top .leaflet-control, .leaflet-left-bottom .leaflet-control, .leaflet-right-bottom .leaflet-control {
+	clear: none;
+	float: left;
+	}
+.leaflet-center {
+	left: 0;
+	right: 0;
+	text-align: center;
+	}
+.leaflet-center .leaflet-control {
+	display: inline-block;
+	float: none;
+	}
 .leaflet-control {
 	float: left;
 	clear: both;
